@@ -11,15 +11,17 @@ match priority:
     case "high":
         reminder += "\nThis is a high-priority task!"
     case "medium":
-        reminder += "\nThis task has medium priority."
+        reminder += "\nThis task has medium priority"
     case "low":
-        reminder += "\nThis is a low-priority task."
+        reminder += "\nThis is a low-priority task"
     case _:
-        reminder += "\nUnknown priority level."
+        reminder += "\nUnknown priority level"
 
 # Use if-statement to handle time sensitivity
 if time_bound == "yes":
-    reminder += "It requires immediate attention today!"
+    reminder += "that requires immediate attention today!"
+else:
+    reminder += "Consider completing it when you have free time."
 
 # Print the final reminder
 print("\n" + reminder)
