@@ -1,4 +1,4 @@
-weather = input("Enter the weather (sunny, rainy, cold): ").strip().lower()
+weather = input("Enter the weather (sunny, rainy, cold): ").lower()
 if weather == "sunny":
     print("Wear a t-shirt and sunglasses.")
 elif weather == "rainy":
